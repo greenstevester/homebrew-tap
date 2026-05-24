@@ -13,14 +13,11 @@ cask "alltalk" do
 
   caveats <<~EOS
     AllTalk #{version} is not yet notarized, so macOS Gatekeeper will block it on
-    first launch. Allow it with either:
+    first launch. After installing, allow it once with:
 
       xattr -dr com.apple.quarantine "/Applications/AllTalk.app"
 
-    or System Settings -> Privacy & Security -> "Open Anyway". You can also skip the
-    quarantine entirely by installing with:
-
-      brew install --cask --no-quarantine greenstevester/tap/alltalk
+    or via System Settings -> Privacy & Security -> "Open Anyway".
 
     AllTalk drives a local llama.cpp server (which it starts and stops for you). Install
     the server and download the Voxtral model first:
