@@ -12,13 +12,6 @@ cask "alltalk" do
   app "AllTalk.app"
 
   caveats <<~EOS
-    AllTalk #{version} is not yet notarized, so macOS Gatekeeper will block it on
-    first launch. After installing, allow it once with:
-
-      xattr -dr com.apple.quarantine "/Applications/AllTalk.app"
-
-    or via System Settings -> Privacy & Security -> "Open Anyway".
-
     AllTalk drives a local llama.cpp server (which it starts and stops for you). Install
     the server and download the Voxtral model first:
 
