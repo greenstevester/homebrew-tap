@@ -1,6 +1,6 @@
 cask "alltalk" do
-  version "0.1.0"
-  sha256 "aa6a769b7a46d689d0965d723d1b17d186821a75d145f3c7123852c7a5d7504a"
+  version "0.1.1"
+  sha256 "debae22f7ea0071a298b9340ca6f75af65a1ac2f0fec2cd01681124d8012d77e"
 
   url "https://github.com/greenstevester/alltalk/releases/download/v#{version}/AllTalk-#{version}.zip"
   name "AllTalk"
